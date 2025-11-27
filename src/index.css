@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 body {
-  background-color: #000;
-  color: white;
+  /* Aplicamos el beige de fondo y el gris oscuro para el texto por defecto */
+  @apply bg-beige text-dark-grey selection:bg-dark-grey selection:text-beige;
+}
+
+/* Opcional: Un pequeño truco para suavizar las fuentes en Mac/iOS */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
