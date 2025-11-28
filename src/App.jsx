@@ -5,6 +5,7 @@ import {
   Brain, DollarSign, Server, 
   Mic, Wifi, Battery, Signal, FileText
 } from 'lucide-react';
+import { Link } from "react-router-dom";
 
 // --- DATOS DE EJEMPLO PARA LOS CHATS ---
 const chatPersonal = [
@@ -246,8 +247,9 @@ const Footer = () => {
           <div>
             <h3 className="text-sm font-bold text-beige uppercase tracking-wider mb-6">Legal</h3>
             <ul className="space-y-4 text-beige/70 text-sm">
-              <li><a href="#" className="hover:text-beige transition">Privacidad</a></li>
-              <li><a href="#" className="hover:text-beige transition">Términos</a></li>
+            <li><Link to="/privacidad" className="hover:text-beige transition">Privacidad</Link></li>
+              {/* <li><a href="#" className="hover:text-beige transition">Privacidad</a></li>
+              <li><a href="#" className="hover:text-beige transition">Términos</a></li> */}
             </ul>
           </div>
 
@@ -278,8 +280,8 @@ function App() {
             </div>
 
             <div className="hidden md:flex space-x-8 items-center">
-              <a href="#personal" className="text-dark-grey/80 hover:text-dark-grey font-medium transition text-sm uppercase tracking-wider">Personal</a>
-              <a href="#negocio" className="text-dark-grey/80 hover:text-dark-grey font-medium transition text-sm uppercase tracking-wider">Negocio</a>
+              {/* <a href="#personal" className="text-dark-grey/80 hover:text-dark-grey font-medium transition text-sm uppercase tracking-wider">Personal</a>
+              <a href="#negocio" className="text-dark-grey/80 hover:text-dark-grey font-medium transition text-sm uppercase tracking-wider">Negocio</a> */}
               <button className="bg-dark-grey text-beige px-6 py-2.5 rounded-full font-bold text-sm hover:bg-dark-grey/90 transition shadow-lg shadow-dark-grey/10">
                 Demo en Vivo
               </button>
